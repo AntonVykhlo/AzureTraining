@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30330.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureTraining", "AzureTraining\AzureTraining.csproj", "{1CD3BD9E-DDCE-45CE-B77A-0B4110AFC336}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureTraining", "AzureTraining\AzureTraining.csproj", "{1CD3BD9E-DDCE-45CE-B77A-0B4110AFC336}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PipeTestProj", "PipeTestProj\PipeTestProj.csproj", "{B62A1F5B-7CED-4A62-BF43-E6A4AFD71D48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{1CD3BD9E-DDCE-45CE-B77A-0B4110AFC336}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CD3BD9E-DDCE-45CE-B77A-0B4110AFC336}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CD3BD9E-DDCE-45CE-B77A-0B4110AFC336}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B62A1F5B-7CED-4A62-BF43-E6A4AFD71D48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B62A1F5B-7CED-4A62-BF43-E6A4AFD71D48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B62A1F5B-7CED-4A62-BF43-E6A4AFD71D48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B62A1F5B-7CED-4A62-BF43-E6A4AFD71D48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
