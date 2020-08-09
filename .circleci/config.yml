@@ -11,6 +11,30 @@
        - checkout
        - run: dotnet build
 
+   test:
+     executor: win/default     
+    
+     steps:
+       - checkout
        - run: dotnet.exe restore
-
        - run: dotnet.exe test
+
+   publishToDockerHub:
+     machine: true
+     steps:
+       - checkout
+       - run: docker build -t $IMAGE_NAME:latest .
+       - run: echo "$DOCKERHUB_ACCESS_TOKEN" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
+       - run: docker push $IMAGE_NAME:latest
+
+ workflows:
+   version: 2
+   buildAndTest:
+     jobs:
+       - build
+       - test:
+          requires:
+            - build
+       - publishToDockerHub:
+          requires:
+            - test
