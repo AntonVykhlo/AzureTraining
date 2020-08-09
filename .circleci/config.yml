@@ -10,3 +10,7 @@
      steps:
        - checkout
        - run: dotnet build
+
+       - run: dotnet.exe restore
+
+       - run: dotnet.exe test
